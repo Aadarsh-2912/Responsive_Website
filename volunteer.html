@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volunteers</title>
+    <link rel="stylesheet" href="./css/volunteer.css">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>HOPE</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="volunteer.html">Volunteer Sign-up</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+            <button id="close-menu-button"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+
+
+    <section class="sign-up">
+        <div class="container sign-up__container">
+            <div class="sign-up__left">
+                <h2>Volunteers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente possimus fuga fugit, sunt sint sequi distinctio quia mollitia rem voluptatem aut laborum quis, provident blanditiis debitis placeat magni adipisci architecto, iusto porro iste vero!</p>
+                <img src="./images/sign-up-form.svg">
+            </div>
+
+            <div class="sign-up__right">
+                <form class="sign-up__form" method="POST" action="/signup">
+                    <h2>Sign Up</h2>
+                    <div class="form_group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form_group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form_group">
+                        <input type="tel" id="contact_number" name="contact_number" placeholder="Contact number" required>
+                    </div>
+                    <div class="form_group">
+                        <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p id="response"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="volunteer">
+        <h2>Our Top Volunteers</h2>
+        <div class="container volunteer__container">
+            <article class="volunteer-data">
+                <div class="volunteer-image">
+                    <img src="./images/tm1.jpg">
+                </div>
+                <div class="volunteer-info">
+                    <h4>Alexander Thompson</h4>
+                </div>
+                <div class="volunteer-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+
+            <article class="volunteer-data">
+                <div class="volunteer-image">
+                    <img src="./images/tm2.jpg">
+                </div>
+                <div class="volunteer-info">
+                    <h4>Amelia Watson</h4>
+                </div>
+                <div class="volunteer-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+
+            <article class="volunteer-data">
+                <div class="volunteer-image">
+                    <img src="./images/tm3.jpg">
+                </div>
+                <div class="volunteer-info">
+                    <h4>Charlotte Mitchell</h4>
+                </div>
+                <div class="volunteer-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+
+            <article class="volunteer-data">
+                <div class="volunteer-image">
+                    <img src="./images/tm4.jpg">
+                </div>
+                <div class="volunteer-info">
+                    <h4>Benjamin Carter</h4>
+                </div>
+                <div class="volunteer-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+
+            <article class="volunteer-data">
+                <div class="volunteer-image">
+                    <img src="./images/tm5.jpg">
+                </div>
+                <div class="volunteer-info">
+                    <h4>Emid Davis</h4>
+                </div>
+                <div class="volunteer-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+
+            <article class="volunteer-data">
+                <div class="volunteer-image">
+                    <img src="./images/tm6.jpg">
+                </div>
+                <div class="volunteer-info">
+                    <h4>Christopher Martin</h4>
+                </div>
+                <div class="volunteer-socials">
+                    <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+
+            <a href="volunteer.html" class="btn">Sign-up</a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">charity programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">transaction</a></li>
+                        <li><a href="#">refund</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="uil uil-twitter-alt"></i></a>
+                        <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
