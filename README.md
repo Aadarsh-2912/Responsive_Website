@@ -27,6 +27,7 @@ Leverage JavaScript to add dynamic features such as form validation, interactive
 Focus on creating an intuitive and user-friendly interface that facilitates easy interaction with the website.
 
 # Technical Stack:
+
 Frontend: HTML, CSS, JavaScript
 Backend: Node.js, Express.js
 Database: MongoDB
