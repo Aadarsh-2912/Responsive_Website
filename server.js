@@ -6,19 +6,18 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
-// Logging middleware
+// Logging //
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
   console.log('Request body:', req.body);
   next();
 });
 
-// Connect to MongoDB
+// Connect to MongoDB //
 mongoose.connect('mongodb://localhost/volunteer_db', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Successfully connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
@@ -29,23 +28,20 @@ db.once('open', function() {
   console.log('MongoDB connected successfully');
 });
 
-// Create a schema for the volunteer
+// schema for the volunteer //
 const volunteerSchema = new mongoose.Schema({
   name: String,
   email: String,
   contact_number: String,
   address: String
 });
-
-// Create a model based on the schema
 const Volunteer = mongoose.model('Volunteer', volunteerSchema);
 
-// Route for the volunteer page
 app.get('/volunteer', (req, res) => {
   res.sendFile(path.join(__dirname, 'volunteer.html'));
 });
 
-// POST route to handle form submission
+// POST //
 app.post('/signup', async (req, res) => {
   console.log('Received signup request:', req.body);
   try {
@@ -67,7 +63,7 @@ app.post('/signup', async (req, res) => {
   }
 });
 
-// GET route to retrieve all volunteers
+// GET //
 app.get('/volunteers', async (req, res) => {
   try {
     const volunteers = await Volunteer.find();
@@ -79,7 +75,6 @@ app.get('/volunteers', async (req, res) => {
   }
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
